@@ -1,7 +1,30 @@
 aid: govini
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/govini.png
 name: Govini
-description: 'Govini is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Govini (rebranded to Air, air.ai, in 2026) is a defense-technology and
+  decision-analytics company whose Ark platform combines proprietary defense
+  acquisition data with AI-enabled applications to close the national-security
+  "Readiness Gap" across supply chain, science and technology, production,
+  sustainment, logistics, and modernization missions. Ark holds FedRAMP High
+  authorization and a DISA Impact Level 5 (IL5) Provisional Authorization plus
+  service-level IL5 ATOs, making it a closed, government-authorized SaaS platform
+  rather than a public developer API. Led by CEO Tara Murphy Dougherty and backed
+  by investors including Accel and Bain Capital. This profile entered the API
+  Evangelist network as a portfolio-lead stub and has been enriched with the
+  provider's real public identity, security posture, and published compliance
+  authorizations.
 url: https://raw.githubusercontent.com/api-evangelist/govini/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +32,19 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: Air (air.ai)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- Defense
+- Government
+- National Security
+- Defense Acquisition
+- Analytics
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +53,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.govini.com
+  url: https://air.ai
+- type: Blog
+  url: https://air.ai/insights
+- type: PrivacyPolicy
+  url: https://air.ai/privacy-policy
+- type: Login
+  url: https://ark.ai
+- type: Compliance
+  url: https://air.ai/products/ark
+- type: Conformance
+  url: conformance/govini-conformance.yml
+- type: DomainSecurity
+  url: security/govini-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

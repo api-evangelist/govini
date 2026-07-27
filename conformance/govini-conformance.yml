@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://air.ai/products/ark
+note: >-
+  Govini rebranded to Air (air.ai) in 2026. Ark is a closed government SaaS
+  platform with no public API surface; conformance here captures the published
+  government security/compliance authorizations, not API-standard conformance.
+standards:
+  - id: fedramp-high
+    conforms: true
+    evidence: >-
+      Ark platform obtained FedRAMP High authorization (2026), publicly
+      announced and displayed on the product page.
+    source: https://www.prnewswire.com/news-releases/govinis-ark-achieves-fedramp-high-authorization-302446474.html
+  - id: disa-il5
+    conforms: true
+    evidence: >-
+      Impact Level 5 (IL5) Provisional Authorization from the Defense
+      Information Systems Agency (DISA), plus service-level IL5 ATOs.
+    source: https://air.ai/products/ark
+  - id: oauth2
+    conforms: false
+    evidence: no public OpenAPI or documented OAuth surface
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no public API
